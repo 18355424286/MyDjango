@@ -155,7 +155,7 @@ class TestSelectHospital:
         assert (self.Index_Page.user_name.text, self.Index_Page.hospital_name.text) == (username, "附一医院 （切换医院）")
         pass
 
-#
-# if __name__ == '__main__':
-#     pytest.main()
-#     pass
+
+if __name__ == '__main__':
+    pytest.main(["test_login.py::TestLogin", "test_login.py::TestSelectHospital"])
+    pass
