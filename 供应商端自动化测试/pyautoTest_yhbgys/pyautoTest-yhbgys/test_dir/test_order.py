@@ -35,7 +35,7 @@ class TestAllOrder:
         pass
 
     # 医耗宝供应商进入订单界面测试用例
-    def to_order(self):
+    def test_to_order(self):
         assert self.driver.current_url == self.url + r"order/untreated/untreatedToday"
         pass
 
