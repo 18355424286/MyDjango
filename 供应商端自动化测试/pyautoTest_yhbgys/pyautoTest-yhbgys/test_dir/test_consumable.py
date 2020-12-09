@@ -1,5 +1,5 @@
 import sys
-import pytest
+# import pytest
 from selenium import webdriver
 from time import sleep
 
