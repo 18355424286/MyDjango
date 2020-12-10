@@ -1,5 +1,5 @@
 import sys
-# import pytest
+import pytest
 from selenium import webdriver
 from time import sleep
 
@@ -148,3 +148,7 @@ class TestConsumable:
         assert self.driver.current_url == self.url + r"consumable/management/refuse"
         pass
     pass
+
+
+if __name__ == '__main__':
+    pytest.main(["test_consumable.py::TestConsumable"])
