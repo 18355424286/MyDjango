@@ -37,7 +37,7 @@ class TestAgent:
 
     # 医耗宝供应商进入配送界面测试用例
     def test_to_agent(self):
-        sleep(self.sleep_time)
+        # sleep(self.sleep_time)
         assert self.driver.current_url == self.url + r"distribution/maintain/agent"
         pass
 
