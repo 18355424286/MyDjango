@@ -11,6 +11,7 @@ from page.agent_page import AgentPage
 
 class TestAgent:
     url = r"http://183.60.104.92:8000/#/"
+    sleep_time = 5
 
     # ==========Fixture==========
     def setup_class(self):
@@ -22,12 +23,12 @@ class TestAgent:
         self.Login_Page.user_input = "test"
         self.Login_Page.password_input = "123456zxA"
         self.Login_Page.login_button.click()
-        sleep(2)
+        sleep(self.sleep_time)
         self.Login_Page.select_hospital.click()
         self.Login_Page.select_ensure.click()
-        sleep(2)
+        sleep(self.sleep_time)
         self.Agent_Page.agent_button.click()
-        sleep(2)
+        sleep(self.sleep_time)
         pass
 
     def teardown_class(self):
@@ -36,20 +37,21 @@ class TestAgent:
 
     # 医耗宝供应商进入配送界面测试用例
     def test_to_agent(self):
+        sleep(self.sleep_time)
         assert self.driver.current_url == self.url + r"distribution/maintain/agent"
         pass
 
     # 医耗宝供应商进入配送公司界面测试用例
     def test_to_agent_company(self):
         self.Agent_Page.agent_company.click()
-        sleep(2)
+        sleep(self.sleep_time)
         assert self.driver.current_url == self.url + r"distribution/maintain/agent"
         pass
 
     # 医耗宝供应商进入审核记录界面测试用例
     def test_to_agent_record(self):
         self.Agent_Page.agent_record.click()
-        sleep(2)
+        sleep(self.sleep_time)
         assert self.driver.current_url == self.url + r"distribution/maintain/agentRecord"
         pass
     pass

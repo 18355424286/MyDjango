@@ -11,6 +11,7 @@ from page.index_page import IndexPage
 
 class TestLogin:
     url = r"http://183.60.104.92:8000/#/"
+    sleep_time = 5
 
     # ==========Fixture==========
     def setup(self):
@@ -30,7 +31,7 @@ class TestLogin:
         打开登录界面
         :return:null
         """
-        sleep(2)
+        sleep(self.sleep_time)
         # print("--------------------" + self.Login_Page.company_name.text)
         assert self.Login_Page.company_name.text == "福建星联科技有限公司"
         pass
@@ -41,7 +42,7 @@ class TestLogin:
         :return:
         """
         self.Login_Page.login_button.click()
-        sleep(2)
+        sleep(self.sleep_time)
         assert self.Login_Page.body.get_attribute("class") == ""
         pass
 
@@ -59,7 +60,7 @@ class TestLogin:
         """
         self.Login_Page.user_input = user
         self.Login_Page.login_button.click()
-        sleep(2)
+        sleep(self.sleep_time)
         assert self.Login_Page.body.get_attribute("class") == ""
         pass
 
@@ -76,7 +77,7 @@ class TestLogin:
         """
         self.Login_Page.password_input = password
         self.Login_Page.login_button.click()
-        sleep(2)
+        sleep(self.sleep_time)
         assert self.Login_Page.body.get_attribute("class") == ""
         pass
 
@@ -96,7 +97,7 @@ class TestLogin:
         self.Login_Page.user_input = user
         self.Login_Page.password_input = password
         self.Login_Page.login_button.click()
-        sleep(2)
+        sleep(self.sleep_time)
         assert self.Login_Page.body.get_attribute("class") == ""
         pass
 
@@ -116,13 +117,14 @@ class TestLogin:
         self.Login_Page.user_input = user
         self.Login_Page.password_input = password
         self.Login_Page.login_button.click()
-        sleep(2)
+        sleep(self.sleep_time)
         assert self.Login_Page.body.get_attribute("class") == "el-popup-parent--hidden"
         pass
 
 
 class TestSelectHospital:
     url = r"http://183.60.104.92:8000/#/"
+    sleep_time = 5
 
     # ==========Fixture==========
     def setup(self):
@@ -148,10 +150,10 @@ class TestSelectHospital:
         self.Login_Page.user_input = user
         self.Login_Page.password_input = password
         self.Login_Page.login_button.click()
-        sleep(2)
+        sleep(self.sleep_time)
         self.Login_Page.select_hospital.click()
         self.Login_Page.select_ensure.click()
-        sleep(2)
+        sleep(self.sleep_time)
         assert (self.Index_Page.user_name.text, self.Index_Page.hospital_name.text) == (username, "附一医院 （切换医院）")
         pass
 
