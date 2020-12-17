@@ -96,6 +96,13 @@ class TestChangeHospital:
         assert self.driver.current_url == self.url + r"approval/returnGoodsApproved/returnGoodsApproved"
         pass
 
+    # 医耗宝供应商点击耗材订货排行测试用例
+    def test_click_order_button(self):
+        self.Index_Page.order_button.click()
+        sleep(self.sleep_time)
+        assert self.driver.current_url == self.url + r"index/ranking/consumablesOrderingRanking"
+        pass
+
     # 医耗宝供应商点击耗材订货排行季榜测试用例
     def test_click_order_quarter_button(self):
         self.Index_Page.order_quarter_button.click()
@@ -110,7 +117,21 @@ class TestChangeHospital:
         assert str(self.Index_Page.order_month_button.get_attribute("class")).find("active") != -1
         pass
 
-    # 医耗宝供应商点击耗材退货排行月榜测试用例
+    # 医耗宝供应商点击耗材订货排行报表测试用例
+    def test_click_order_report_button(self):
+        self.Index_Page.order_report_button.click()
+        sleep(self.sleep_time)
+        assert self.driver.current_url == self.url + r"consumable/dataReport/orderRate"
+        pass
+
+    # 医耗宝供应商点击耗材退货排行测试用例
+    def test_click_return_button(self):
+        self.Index_Page.return_button.click()
+        sleep(self.sleep_time)
+        assert self.driver.current_url == self.url + r"index/ranking/consumablesReturnRanking"
+        pass
+
+    # 医耗宝供应商点击耗材退货排行季榜测试用例
     def test_click_return_quarter_button(self):
         self.Index_Page.return_quarter_button.click()
         sleep(self.sleep_time)
@@ -124,57 +145,78 @@ class TestChangeHospital:
         assert str(self.Index_Page.return_month_button.get_attribute("class")).find("active") != -1
         pass
 
-    # 医耗宝供应商点击耗材销售排行年榜测试用例
+    # 医耗宝供应商点击耗材退货排行报表测试用例
+    def test_click_return_report_button(self):
+        self.Index_Page.return_report_button.click()
+        sleep(self.sleep_time)
+        assert self.driver.current_url == self.url + r"consumable/dataReport/returnRate"
+        pass
+
+    # 医耗宝供应商点击销量排行测试用例
+    def test_click_market_button(self):
+        self.Index_Page.market_button.click()
+        sleep(self.sleep_time)
+        assert self.driver.current_url == self.url + r"index/ranking/salesRanking"
+        pass
+
+    # 医耗宝供应商点击销量排行年榜测试用例
     def test_click_market_year_button(self):
         self.Index_Page.market_year_button.click()
         sleep(self.sleep_time)
         assert str(self.Index_Page.market_year_button.get_attribute("class")).find("active") != -1
         pass
 
-    # 医耗宝供应商点击耗材退货排行月榜测试用例
+    # 医耗宝供应商点击销量排行月榜测试用例
     def test_click_market_month_button(self):
         self.Index_Page.market_month_button.click()
         sleep(self.sleep_time)
         assert str(self.Index_Page.market_month_button.get_attribute("class")).find("active") != -1
         pass
 
-    # 医耗宝供应商点击耗材退货排行季榜测试用例
+    # 医耗宝供应商点击销量排行季榜测试用例
     def test_click_market_quarter_button(self):
         self.Index_Page.market_quarter_button.click()
         sleep(self.sleep_time)
         assert str(self.Index_Page.market_quarter_button.get_attribute("class")).find("active") != -1
         pass
 
-    # 医耗宝供应商点击耗材退货排行季榜测试用例
+    # 医耗宝供应商点击全部订单-全部测试用例
     def test_click_all_order_button(self):
         self.Index_Page.all_order_button.click()
         sleep(self.sleep_time)
         assert str(self.Index_Page.all_order_button.get_attribute("class")).find("active") != -1
         pass
 
-    # 医耗宝供应商点击耗材退货排行季榜测试用例
+    # 医耗宝供应商点全部订单-未处理测试用例
     def test_click_wcl_order_button(self):
         self.Index_Page.wcl_order_button.click()
         sleep(self.sleep_time)
         assert str(self.Index_Page.wcl_order_button.get_attribute("class")).find("active") != -1
         pass
 
-    # 医耗宝供应商点击耗材退货排行季榜测试用例
+    # 医耗宝供应商点击全部订单-未完结测试用例
     def test_click_wwj_order_button(self):
         self.Index_Page.wwj_order_button.click()
         sleep(self.sleep_time)
         assert str(self.Index_Page.wwj_order_button.get_attribute("class")).find("active") != -1
         pass
 
-    # 医耗宝供应商点击耗材退货排行季榜测试用例
+    # 医耗宝供应商点击全部订单-已完成测试用例
     def test_click_ywc_order_button(self):
         self.Index_Page.ywc_order_button.click()
         sleep(self.sleep_time)
         assert str(self.Index_Page.ywc_order_button.get_attribute("class")).find("active") != -1
         pass
+
+    # 医耗宝供应商点击订单-未完成测试用例
+    def test_click_order_untreated(self):
+        self.Index_Page.order_untreated.click()
+        sleep(self.sleep_time)
+        assert self.driver.current_url == self.url + r"order/untreated/untreatedToday"
+        pass
     pass
 
 
 if __name__ == '__main__':
-    pytest.main(["test_index.py::TestChangeHospital"])
+    pytest.main(["test_index.py::TestChangeHospital::test_click_order_untreated"])
     pass
