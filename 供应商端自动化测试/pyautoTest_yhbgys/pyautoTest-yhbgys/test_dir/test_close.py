@@ -6,6 +6,7 @@ from time import sleep
 sys.path.append("..")
 from page.login_page import LoginPage
 from page.close_page import ClosePage
+from basic_setting import BasicSetting
 
 
 class TestClose:

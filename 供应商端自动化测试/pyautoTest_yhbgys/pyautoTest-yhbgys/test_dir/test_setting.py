@@ -6,6 +6,7 @@ from time import sleep
 sys.path.append("..")
 from page.login_page import LoginPage
 from page.setting_page import SettingPage
+from basic_setting import BasicSetting
 
 
 class TestSetting:

@@ -7,11 +7,12 @@ sys.path.append("..")
 from page.login_page import LoginPage
 # from page.index_page import IndexPage
 from page.return_page import ReturnPage
+from basic_setting import BasicSetting
 
 
 class TestReturn:
-    url = r"http://183.60.104.92:8000/#/"
-    sleep_time = 5
+    url = BasicSetting.url
+    sleep_time = BasicSetting.sleep_time
 
     # ==========Fixture==========
     def setup_class(self):

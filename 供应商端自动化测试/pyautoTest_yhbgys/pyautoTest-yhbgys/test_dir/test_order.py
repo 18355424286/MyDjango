@@ -7,6 +7,7 @@ sys.path.append("..")
 from page.login_page import LoginPage
 # from page.index_page import IndexPage
 from page.order_page import OrderPage
+from basic_setting import BasicSetting
 
 
 class TestAllOrder:

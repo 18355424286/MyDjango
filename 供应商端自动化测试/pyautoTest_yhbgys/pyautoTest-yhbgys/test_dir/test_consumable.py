@@ -7,6 +7,7 @@ sys.path.append("..")
 from page.login_page import LoginPage
 # from page.index_page import IndexPage
 from page.consumable_page import ConsumablePage
+from basic_setting import BasicSetting
 
 
 class TestConsumable:
