@@ -1,7 +1,7 @@
 import pytest
 import sys
-from basic_setting import BasicSetting
 sys.path.append("test_dir")
+
 
 if __name__ == '__main__':
     test_file_list = ["test_dir/test_login.py",
@@ -12,10 +12,7 @@ if __name__ == '__main__':
                       "test_dir/test_return.py",
                       "test_dir/test_close.py",
                       "test_dir/test_setting.py"]
-    test_url = input("请输入url:")
-    test_sleep_time = input("请输入等待时间:")
     choose = input("请输入测试项目：0.测试全部。1.测试登录。2.测试主页。3.测试订单。4.测试耗材。5.测试配送。6.测试退货。7.测试结算。8.测试设置。")
-    basic_setting = BasicSetting(test_url, test_sleep_time)
     try:
         choose = int(choose)-1
         if choose == -1:

@@ -7,15 +7,15 @@ sys.path.append("..")
 from page.login_page import LoginPage
 # from page.index_page import IndexPage
 from page.return_page import ReturnPage
-from basic_setting import BasicSetting
 
 
 class TestReturn:
-    url = BasicSetting.url
-    sleep_time = BasicSetting.sleep_time
+    url = "http://183.60.104.92:8000/#/"
+    sleep_time = 3
 
     # ==========Fixture==========
     def setup_class(self):
+        print(self.url + "-------------------------------------------------------" + str(type(self.url)))
         self.driver = webdriver.Chrome()
         self.Login_Page = LoginPage(self.driver)
         self.Return_Page = ReturnPage(self.driver)

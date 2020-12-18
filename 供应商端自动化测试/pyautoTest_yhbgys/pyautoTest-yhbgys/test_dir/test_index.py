@@ -6,12 +6,11 @@ from time import sleep
 sys.path.append("..")
 from page.login_page import LoginPage
 from page.index_page import IndexPage
-from basic_setting import BasicSetting
 
 
 class TestChangeHospital:
-    url = BasicSetting.url
-    sleep_time = BasicSetting.sleep_time
+    url = "http://183.60.104.92:8000/#/"
+    sleep_time = 3
 
     # ==========Fixture==========
     def setup_class(self):
