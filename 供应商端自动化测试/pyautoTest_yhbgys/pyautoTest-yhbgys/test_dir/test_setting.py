@@ -10,8 +10,8 @@ from basic_setting import BasicSetting
 
 
 class TestSetting:
-    url = r"http://183.60.104.92:8000/#/"
-    sleep_time = 3
+    url = BasicSetting.url
+    sleep_time = BasicSetting.sleep_time
 
     # ==========Fixture==========
     def setup_class(self):
