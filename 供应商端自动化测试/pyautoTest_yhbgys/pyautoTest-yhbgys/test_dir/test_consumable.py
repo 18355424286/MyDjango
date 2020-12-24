@@ -91,7 +91,7 @@ class TestConsumable:
         self.Consumable_Page.data_report.click()
         self.Consumable_Page.data_report_recent.click()
         sleep(self.sleep_time)
-        assert self.driver.current_url == self.url + r"consumable/dataReport/nearEffect"
+        assert self.driver.current_url == self.url + r"consumable/dataReport/nearArticle"
         pass
 
     # 医耗宝供应商进入耗材-耗材管理界面测试用例
