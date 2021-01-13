@@ -27,6 +27,6 @@ if __name__ == '__main__':
         pass
     except Exception as e:
         print(e)
-        print("输入错误")
+        print("输入错误。")
         pass
     pass
