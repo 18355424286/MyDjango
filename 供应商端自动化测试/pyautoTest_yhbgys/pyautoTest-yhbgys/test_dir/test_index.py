@@ -10,7 +10,7 @@ from page.index_page import IndexPage
 
 class TestChangeHospital:
     url = "http://183.60.104.92:8000/#/"
-    sleep_time = 3
+    sleep_time = 3 
 
     # ==========Fixture==========
     def setup_class(self):
@@ -212,7 +212,7 @@ class TestChangeHospital:
     def test_click_order_untreated(self):
         self.Index_Page.order_untreated.click()
         sleep(self.sleep_time)
-        assert self.driver.current_url == self.url + r"order/untreated/untreatedToday"
+        assert self.driver.current_url == self.url + r"order/untreated/untreatedAll"
         pass
     pass
 

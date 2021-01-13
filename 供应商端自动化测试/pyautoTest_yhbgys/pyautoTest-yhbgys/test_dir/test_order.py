@@ -37,15 +37,7 @@ class TestAllOrder:
 
     # 医耗宝供应商进入订单界面测试用例
     def test_to_order(self):
-        assert self.driver.current_url == self.url + r"order/untreated/untreatedToday"
-        pass
-
-    # 医耗宝供应商订单界面未完成-全部测试用例
-    def test_unfinished_all(self):
-        self.Order_Page.unfinished_button.click()
-        self.Order_Page.all_order_button.click()
-        sleep(self.sleep_time)
-        assert self.driver.current_url == self.url + r"order/untreated/untreatedToday"
+        assert self.driver.current_url == self.url + r"order/untreated/untreatedAll"
         pass
 
     # 医耗宝供应商订单界面未完成-未处理测试用例
@@ -54,6 +46,22 @@ class TestAllOrder:
         self.Order_Page.untreated_order_button.click()
         sleep(self.sleep_time)
         assert self.driver.current_url == self.url + r"order/untreated/untreatedAll"
+        pass
+
+    # 医耗宝供应商订单界面未完成-备货中测试用例
+    def test_unfinished_prepare(self):
+        self.Order_Page.unfinished_button.click()
+        self.Order_Page.prepare_order_button.click()
+        sleep(self.sleep_time)
+        assert self.driver.current_url == self.url + r"order/untreated/untreatedPrepare"
+        pass
+
+    # 医耗宝供应商订单界面未完成-配送中测试用例
+    def test_unfinished_distribution(self):
+        self.Order_Page.unfinished_button.click()
+        self.Order_Page.distribution_order_button.click()
+        sleep(self.sleep_time)
+        assert self.driver.current_url == self.url + r"order/untreated/untreatedDistribution"
         pass
 
     # 医耗宝供应商订单界面未完成-未完结测试用例
