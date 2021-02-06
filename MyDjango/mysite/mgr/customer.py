@@ -6,8 +6,6 @@ import json
 def list_customers(request):
     qs = Customer.objects.values()
     ret_list = list(qs)
-    print(ret_list)
-    print('=============')
     return JsonResponse({"ret": 0, 'retList': ret_list})
 
 
