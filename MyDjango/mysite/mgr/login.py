@@ -33,3 +33,20 @@ def log_out(request):
     logout(request)
     return JsonResponse({'ret': 0})
     pass
+
+
+def test(request):
+    userName = request.POST.get('username')
+    passWord = request.POST.get('password')
+
+    return JsonResponse({'ret': 0, 'msg': 'test', 'user': userName, 'pwd': passWord,
+                         'data': [
+                             {'id': 1, 'name': 'a'},
+                             {'id': 2, 'name': 'b'},
+                             {'id': 3, 'name': 'c'},
+                             {'id': 4, 'name': 'd'},
+                             {'id': 5, 'name': 'e'}
+                         ]})
+
+
+

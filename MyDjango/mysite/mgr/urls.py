@@ -21,4 +21,5 @@ urlpatterns = [
     path('medicine', medicine.dispatcher),
     path('login', login.log_in),
     path('logout', login.log_out),
+    path('test', login.test)
 ]

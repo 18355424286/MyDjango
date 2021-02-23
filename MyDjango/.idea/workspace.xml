@@ -23,18 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f152120-8175-41e3-a705-93524b71db58" name="Default Changelist" comment="提交代码">
-      <change afterPath="$PROJECT_DIR$/../$RECYCLE.BIN/S-1-5-21-3120695159-2631736298-2726695751-1001/$RR5KCXA.idea/MyDjango.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/common/migrations/0004_medicine_order.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/common/migrations/0005_auto_20210218_1426.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/mgr/login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/mgr/medicine.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../工作文件/json分析/.idea/json分析.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../工作文件/添加任务表/.idea/添加任务表.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/common/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/common/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/mgr/customer.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mgr/customer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/mgr/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mgr/login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/mgr/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/mgr/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -174,10 +165,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1612504541563" />
-    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1612575531623">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1613808670650">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1612575531623" />
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1613808670650" />
     <state x="829" y="417" key="Github.ShareDialog" timestamp="1612575654108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -202,10 +193,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1613699945449" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1612583941219">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1613977885741">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1612583941219" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1613977885741" />
     <state x="824" y="254" key="com.intellij.openapi.vcs.changes.SpecificFilesViewDialog" timestamp="1612575309090">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
