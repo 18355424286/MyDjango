@@ -24,5 +24,12 @@ urlpatterns = [
     path('approvals/', include('approvals.urls')),
     path('page1/', views.page1_view),
     path('page<int:n>', views.page_view),
-    path('', views.page0_view)
+    path('', views.index_view),
+    path('gea/', views.return_a),
+    path('login', views.login_view),
+    path('test', views.mytemp_view),
+    path('MyCal', views.my_cal_view),
+    path('TestFor', views.for_view),
+    path('sport', views.sport_view, name='sport'),
+    path('music/', include('music.urls'))
 ]

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>for</title>
+</head>
+<body>
+    <div>
+        <h5>s = {{ s }}</h5>
+        <h5>s|大写 = {{s | upper }}</h5>
+        <h5>n + 2 = {{ n | add:'2' }}</h5>
+    </div>
+    <ul>
+        {% for city in lst %}
+        <li> {{forloop.revcounter}}、 {{city}}</li>
+        {% empty %}
+        <li>没有城市</li>
+        {% endfor %}
+    </ul>
+    <img src="{% static 'images/企鹅物流.jpg' %}" alt="">
+</body>
+</html>

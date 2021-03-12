@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    <title>主页</title>
+    {% endblock %}
+</head>
+<body>
+<div style="background-color: red;height: 30px;">
+    登录
+</div>
+{% block page_info %}
+<div style="background-color: green;height: calc(100vh - 60px);">
+    主页内容
+    <a href="{% url 'sport' %}">进入运动页</a>
+</div>
+{% endblock %}
+<div style="background-color: pink;height: 30px;">
+    联系我们
+</div>
+
+</body>
+</html>

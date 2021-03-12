@@ -4,6 +4,7 @@ from os.path import dirname, abspath
 from time import sleep
 from selenium import webdriver
 
+print(sys.path)
 sys.path.append("..")
 print(sys.path)
 from page.login_page import LoginPage
